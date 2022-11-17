@@ -1,4 +1,4 @@
-package ruralvia;
+package PayPal.ruralvia.src.ruralvia;
 
 public class PaymentGateway {
 	private static final int NUMBER = 0;
@@ -11,8 +11,9 @@ public class PaymentGateway {
 			{ "11111111111111114444", 1, 2019 }, 
 			{ "33333333333333333333", 7, 2017 } 
 		};
-
-	public boolean isValid(Transaction transaction) {
+/*
+ * 
+	public boolean isValid(//Transaction transaction) {
 		for (Object[] row : validCreditCards) {
 			String pan = (String) row[NUMBER]; 
 			if ( pan.equals(transaction.getCreditCardNumber()) ) {
@@ -22,4 +23,5 @@ public class PaymentGateway {
 		}
 		return false;
 	}
+	*/
 }

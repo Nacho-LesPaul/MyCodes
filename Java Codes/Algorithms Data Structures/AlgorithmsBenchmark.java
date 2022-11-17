@@ -1,5 +1,3 @@
-package p1Algoritmia;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -32,12 +30,12 @@ public class AlgorithmsBenchmark {
 
 	/**
 	 * @param output       Nombre del fichero de salida
-	 * @param startN       Valor inicial del parámetro en las pruebas
-	 * @param endN         Valor final del parámetro en la pruebas
-	 * @param times        Número de veces que se ejecutará la prueba del método
-	 *                     para cada valor del parámetro
-	 * @param nombreClase  Clase que tiene el método que queremos medir
-	 * @param nombreMetodo Método que queremos medir
+	 * @param startN       Valor inicial del parametro en las pruebas
+	 * @param endN         Valor final del parametro en la pruebas
+	 * @param times        Numero de veces que se ejecutar la prueba del mï¿½todo
+	 *                     para cada valor del parametro
+	 * @param nombreClase  Clase que tiene el metodo que queremos medir
+	 * @param nombreMetodo Metodo que queremos medir
 	 */
 	public void testFinal(String output, int startN, int endN, int times, String nombreClase, String nombreMetodo) {
 		FileWriter file = null;

@@ -1,4 +1,4 @@
-package paypal;
+package PayPal.payPal.src.paypal;
 
 import java.util.Random;
 

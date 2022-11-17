@@ -1,5 +1,3 @@
-package p1Algoritmia;
-
 import java.security.InvalidParameterException;
 
 public class Algorithms {
@@ -43,28 +41,28 @@ public class Algorithms {
 	}
 
 	/**
-	 * A continuación se plantea un algoritmo con complejidad temporal lineal
+	 * A continuaciï¿½n se plantea un algoritmo con complejidad temporal lineal
 	 * 
 	 * @param n
 	 */
 	public void linear(int n) {
 
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		for (int i = 0; i < n; i++) {
 			doNothing();
 		}
 	}
 
 	/**
-	 * A continuación se plantea un algoritmo con complejidad temporal cuadrática
+	 * A continuaciï¿½n se plantea un algoritmo con complejidad temporal cuadrï¿½tica
 	 * 
 	 * @param n
 	 */
 	public void quadratic(int n) {
 
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				doNothing();
@@ -73,14 +71,14 @@ public class Algorithms {
 	}
 
 	/**
-	 * A continuación se plantea un algoritmo con complejidad temporal cúbica
+	 * A continuaciï¿½n se plantea un algoritmo con complejidad temporal cï¿½bica
 	 * 
 	 * @param n
 	 */
 	public void cubic(int n) {
 
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				for (int z = 0; z < n; z++) {
@@ -91,14 +89,14 @@ public class Algorithms {
 	}
 
 	/**
-	 * A continuación se plantea un algoritmo con complejidad temporal logaritmica
+	 * A continuaciï¿½n se plantea un algoritmo con complejidad temporal logaritmica
 	 * 
 	 * @param n
 	 */
 	public void logarithmic(int n) {
 
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		for (int i = 1; i < n; i = i * 2) {
 			doNothing();
 		}
@@ -150,7 +148,7 @@ public class Algorithms {
 	public long potenciaRec(int a, int b) { // Calcula a elevado a b de forma recursiva por potencias sucesivas
 
 		if (a < 0 || b < 0)
-			throw new InvalidParameterException("No permitido alguno de los parámetros introducido");
+			throw new InvalidParameterException("No permitido alguno de los parï¿½metros introducido");
 		if (b == 0) {
 			return 1;
 		}
@@ -162,10 +160,10 @@ public class Algorithms {
 	 * @param b
 	 * @return
 	 */
-	public int restoDivRec(int a, int b) { // calcula el resto de la división a/b de forma recursiva
+	public int restoDivRec(int a, int b) { // calcula el resto de la divisiï¿½n a/b de forma recursiva
 
 		if (a < 0 || b <= 0)
-			throw new InvalidParameterException("No permitido alguno de los parámetros introducido");
+			throw new InvalidParameterException("No permitido alguno de los parï¿½metros introducido");
 		if (a < b) {
 			return a;
 		}
@@ -178,10 +176,10 @@ public class Algorithms {
 	 * @param b
 	 * @return
 	 */
-	public int divEntRec(int a, int b) { // calcula la división entera a/b de forma recursiva
+	public int divEntRec(int a, int b) { // calcula la divisiï¿½n entera a/b de forma recursiva
 
 		if (a < 0 || b <= 0)
-			throw new InvalidParameterException("No permitido alguno de los parámetros introducido");
+			throw new InvalidParameterException("No permitido alguno de los parï¿½metros introducido");
 		int cont = 0;
 		if (a<b) {
 			return cont;
@@ -200,7 +198,7 @@ public class Algorithms {
 	public long pow2Rec1(int n) { // calcula 2 elevado a n de forma recursiva 2^n = 2*2^(n-1)
 
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		doNothing();
 		if (n == 0) {
 			return 1;
@@ -216,7 +214,7 @@ public class Algorithms {
 	public long pow2Rec2(int n) { // calcula 2 elevado a n de forma recursiva 2^n = 2^(n-1)+2^(n-1)
 
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		doNothing();
 		if (n == 0) {
 			return 1;
@@ -232,7 +230,7 @@ public class Algorithms {
 	public long pow2Rec3(int n) { // calcula 2 elevado a n de forma recursiva 2^n = 2^(n/2)*2^(n/2) si n par y *2
 									// si es impar
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		doNothing();
 		if (n == 0) {
 			return 1;
@@ -251,7 +249,7 @@ public class Algorithms {
 	public long pow2Rec4(int n) { // calcula 2 elevado a n de forma recursiva 2^n = como pow2Rec3 pero sin repetir
 									// llamada
 		if (n < 0)
-			throw new InvalidParameterException("No permitidos parámetros negativos como " + n);
+			throw new InvalidParameterException("No permitidos parï¿½metros negativos como " + n);
 		doNothing();
 		if (n == 0) {
 			return 1;
@@ -275,7 +273,7 @@ public class Algorithms {
 //	return "POR HACER"; 
 //	} 
 //
-//	public boolean esSimetrica(int[][] m) { // Indica si es simétrica una matriz cuadrada de forma recursiva 
+//	public boolean esSimetrica(int[][] m) { // Indica si es simï¿½trica una matriz cuadrada de forma recursiva 
 //
 //	return false; 
 //	} 
