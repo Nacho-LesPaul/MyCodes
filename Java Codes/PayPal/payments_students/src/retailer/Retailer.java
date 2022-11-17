@@ -1,7 +1,4 @@
-/**
- * 
- */
-package retailer;
+package PayPal.payments_students.src.retailer;
 
 /**
  * @author UO270353
