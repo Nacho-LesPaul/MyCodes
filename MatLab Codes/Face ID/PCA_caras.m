@@ -1,4 +1,4 @@
-%leer la base  de datos de caras
+%leer la base  de datos de caras.∫
 clear all
 close all
 clc
